@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/edit_profile"
+                android:icon="@drawable/ic_border_color_black_24dp"
+                android:title="EDIT PROFILE"/>
+        <item
+                android:id="@+id/wallet"
+                android:icon="@drawable/ic_account_balance_wallet_black_24dp"
+                android:title="WALLET"/>
+        <item
+                android:id="@+id/new_order"
+                android:icon="@drawable/ic_menu_black_24dp"
+                android:title="NEW ORDER "/>
+        <item
+                android:id="@+id/order_summery"
+                android:icon="@drawable/ic_clear_all_black_24dp"
+                android:title="ORDER HISTORY"/>
+        <item
+                android:id="@+id/logout"
+                android:icon="@drawable/lock"
+                android:title="LOGOUT"/>
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/notice"
+                android:icon="@drawable/ic_event_note_black_24dp"
+                android:title="ACADEMIC NOTICE"/>
+            <item
+                    android:id="@+id/share"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="SHARE"/>
+
+            <item
+                    android:id="@+id/help"
+                    android:icon="@drawable/ic_help_black_24dp"
+                    android:title="HELP"/>
+            <item
+                    android:id="@+id/feedback"
+                    android:icon="@drawable/ic_feedback_black_24dp"
+                    android:title="FEEDBACK"/>
+            <item
+                    android:id="@+id/about"
+                    android:icon="@drawable/ic_error_outline_black_24dp"
+                    android:title="ABOUT"/>
+            <item
+                    android:id="@+id/update"
+                    android:icon="@drawable/ic_file_upload_black_24dp"
+                    android:title="Version: 2.92"/>
+
+        </menu>
+    </item>
+
+</menu>

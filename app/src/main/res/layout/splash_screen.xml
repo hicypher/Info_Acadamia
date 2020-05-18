@@ -1,0 +1,44 @@
+<RelativeLayout
+
+        android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="match_parent"
+        >
+
+
+    <TextView
+            android:id="@+id/splash_appname"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="131dp"
+            android:layout_marginTop="213dp"
+            android:layout_marginEnd="130dp"
+            android:layout_marginBottom="368dp"
+            android:background="@drawable/splash"
+            android:textStyle="bold" />
+
+    <TextView
+            android:id="@+id/splash_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:textSize="15sp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:text=" ⚡by HiCypher"
+            android:textColor="#000"
+
+            android:textStyle="bold" />
+
+
+</RelativeLayout>
+
+
+
+

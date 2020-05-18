@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#A5D6A7"
+    tools:context=".activity_addnewitem">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relLayout1">
+
+        <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/profileToolBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorPrimary"
+                    app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="20dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:id="@+id/back_cart"
+                            android:background="@drawable/ic_arrow_back_black_24dp"
+                            />
+
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="13dp"
+                            android:text="section"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="#FFF"
+                            android:id="@+id/cart_type"/>
+
+
+
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".8"
+        android:id="@+id/item_recycler_view"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+
+    <LinearLayout android:layout_width="match_parent"
+            android:background="?attr/colorPrimary"
+            android:layout_height="60dp">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_weight="1"
+                      android:gravity="center"
+                      android:layout_height="match_parent">
+            <TextView
+                    android:id="@+id/total_price_text"
+                    android:text="Total price:₹"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+
+            <TextView
+                    android:id="@+id/total_price"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_weight="2"
+                      android:gravity="center"
+                      android:layout_height="match_parent">
+            <Button android:layout_width="wrap_content"
+                    android:text="buy"
+                    android:id="@+id/total_buy"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

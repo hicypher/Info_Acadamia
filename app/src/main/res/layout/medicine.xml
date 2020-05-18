@@ -1,0 +1,121 @@
+<LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relLayout1">
+
+        <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/profileToolBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorPrimary"
+                    app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="20dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:id="@+id/back_change_medicine"
+                            android:background="@drawable/ic_arrow_back_black_24dp"
+                            />
+
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="13dp"
+                            android:text="MEDICINE"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:textColor="#FFF"
+                            android:id="@+id/medicine"/>
+
+
+
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+    </RelativeLayout>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+ <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+         android:layout_marginRight="15dp"
+         android:layout_marginLeft="15dp"
+         android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+     <ImageView
+             android:layout_width="match_parent"
+             android:layout_weight="1"
+             android:layout_marginTop="10dp"
+             android:id="@+id/medicine_image"
+             android:background="@drawable/ic_insert_photo_black_24dp"
+             android:layout_height="480dp"/>
+     <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_weight="8"
+             android:orientation="vertical"
+             android:layout_marginTop="10dp"
+             android:layout_height="match_parent">
+         <EditText
+                 android:layout_width="match_parent"
+                 android:hint="Amount(in number of days)"
+                 android:inputType="number"
+                 android:id="@+id/medicine_amount"
+                 android:layout_height="wrap_content"/>
+
+     <EditText
+             android:layout_width="match_parent"
+             android:hint="Description"
+             android:id="@+id/medicine_description"
+             android:layout_height="wrap_content"/>
+
+     </LinearLayout>
+ </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:layout_weight="10"
+            android:layout_height="match_parent">
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:text="Submit"
+                android:id="@+id/submit_m"
+                android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

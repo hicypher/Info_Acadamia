@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/item_data_list"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="3dp"
+              android:orientation="vertical"
+              android:elevation="4dp"
+>
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF0000"
+            android:elevation="20dp"
+            app:cardCornerRadius="3dp">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="vertical"
+                      android:layout_height="wrap_content">
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_weight="1"
+                          android:layout_height="wrap_content">
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_weight="4"
+                          android:layout_marginRight="4dp"
+                          android:layout_marginLeft="4dp"
+                          android:layout_marginTop="4dp"
+                          android:layout_marginBottom="4dp"
+                          android:layout_height="match_parent">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                        android:src="@drawable/circlecropped"
+                    android:id="@+id/item_data_list_food_image_new_order"
+                    app:civ_border_color="#000"
+                    app:civ_border_width="2dp"
+                    />
+
+
+            </LinearLayout>
+
+
+
+                <LinearLayout android:layout_width="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                    <TextView android:layout_width="match_parent"
+                            android:id="@+id/item_data_list_item_name_new_order"
+                            android:hint="Item name"
+                            android:textSize="18dp"
+                            android:padding="2dp"
+                            android:layout_marginLeft="9dp"
+                            android:textColor="#000"
+                            android:layout_height="wrap_content"/>
+
+                    <TextView android:layout_width="match_parent"
+                            android:id="@+id/item_data_list_shop_name_new_order"
+                            android:hint="Shop Name"
+
+                            android:padding="2dp"
+                            android:textSize="18dp"
+                            android:layout_marginLeft="9dp"
+                            android:textColor="#000"
+                            android:layout_height="wrap_content"/>
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="₹"
+                                android:textSize="20sp"/>
+                        <TextView android:layout_width="match_parent"
+                                android:id="@+id/item_data_list_prise_new_order"
+                                android:hint="Price"
+                                android:textSize="18dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:textColor="#000"
+                                android:layout_height="match_parent"/>
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:id="@+id/item_data_list_status_new_order"
+                                android:text="status"
+                                android:layout_weight="1"
+                                android:textAlignment="center"
+                                android:background="#FDF5A9"
+                                android:textColor="#F50254"
+                                />
+
+                    </LinearLayout>
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            >
+                        <TextView android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+
+                                android:textStyle="bold"
+                                android:textSize="20dp"
+                                android:padding="5dp"
+                                android:textColor="#000"
+                                android:text="Quantity:"/>
+                        <TextView android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:textStyle="bold"
+                                android:id="@+id/item_data_list_quantity_new_order"
+                                android:textSize="20dp"
+                                android:padding="5dp"
+                                android:textColor="#000"
+
+                                />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

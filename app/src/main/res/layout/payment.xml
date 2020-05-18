@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical"
+        tools:context=".payment_activity">
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relLayout1">
+
+        <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/profileToolBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorPrimary"
+                    app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="13dp"
+                            android:text="PAYMENT"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="#FFF"
+                            android:id="@+id/payment"/>
+
+
+
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+    </RelativeLayout>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="70sp"
+            android:gravity="center"
+            android:text="ReCart"
+            android:textStyle="bold"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="30dp"
+               />
+            <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+    <TextView
+            android:id="@+id/amount_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+
+            android:hint="Amount"
+            android:textColor="#000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Amount"
+            android:textColor="#000"
+            android:layout_marginTop="8dp"
+            android:textSize="10sp"
+            android:text="(Delivery Charge)" />
+
+</LinearLayout>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:hint="id"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/note"
+            android:textColor="#000"
+            android:layout_below="@+id/name"
+            android:fontFamily="sans-serif-condensed"/>
+
+    <Button
+            android:layout_width="match_parent"
+            android:gravity="center"
+
+            android:layout_height="55dp"
+            android:textSize="20sp" android:background="@color/colorPrimary"
+            android:textColor="#fff"
+            android:id="@+id/send"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/note"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="pay"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+           android:text="Your Payment Is Safe And Secure"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+    />
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Any Query? Contact At 'hicypher@gmail.com'"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+    />
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:id="@+id/check_wallet"
+                    android:layout_height="wrap_content">
+
+                <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:id="@+id/checkboxw"
+                        android:height="70dp"
+                        android:scaleY="1.5"
+                        android:scaleX="1.5"
+                        android:onClick="onCheckboxClicked"
+                        android:layout_marginRight="40dp"
+                        android:text="use wallet balance"
+                        >
+
+                </CheckBox>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:id="@+id/balancew"
+                        android:layout_height="wrap_content"
+                        android:text="000"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+
+                        ></TextView>
+
+            </LinearLayout>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:id="@+id/textpaymsg"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:text="You need to pay"
+                    android:layout_height="wrap_content">
+            </TextView>
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="proceed"
+                    android:id="@+id/proceed"
+                    android:layout_height="wrap_content"></Button>
+
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/paylayout"
+                    android:gravity="center"
+                    android:background="#FFFFFF"
+                    android:layout_marginTop="10dp">
+                <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:elevation="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/abc"
+                        android:layout_gravity="center|top"
+                        app:cardCornerRadius="10dp">
+                    <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:background="#FFFFFF"
+                            >
+                <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:id="@+id/googlepay"
+                        android:src="@drawable/googlepay"/>
+                <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:layout_toRightOf="@id/googlepay"
+                        android:id="@+id/amazonpay"
+                        android:src="@drawable/amazonpay"/>
+   <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+           android:layout_toRightOf="@id/amazonpay"
+           android:layout_margin="10dp"
+           android:id="@+id/paytm"
+                        android:src="@drawable/paytm"/>
+                <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_toRightOf="@id/paytm"
+                        android:layout_margin="10dp"
+                        android:id="@+id/bhimpay"
+                        android:src="@drawable/bhimpay"/>
+
+                <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+           android:layout_toRightOf="@id/bhimpay"
+           android:layout_margin="10dp"
+           android:id="@+id/phonepe"
+                        android:src="@drawable/phonepe"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/paymentstatus"
+                        android:textSize="18sp"
+                        android:layout_below="@id/abc"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#D81B60"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/paymentdetails"
+                        android:textSize="10sp"
+                        android:layout_margin="5dp"
+                        android:layout_below="@id/paymentstatus"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#000000"/>
+            </RelativeLayout>
+</LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

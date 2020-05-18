@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/referesh"
+            android:title="@string/action_settings"
+            android:icon="@drawable/ic_refresh_black_24dp"
+            android:orderInCategory="100"
+            app:showAsAction="always"/>
+    <item android:id="@+id/cart"
+          android:title="@string/action_settings"
+          android:icon="@drawable/ic_local_grocery_store_black_24dp"
+          android:orderInCategory="100"
+          app:showAsAction="always"/>
+
+    <item
+            android:id="@+id/search"
+            android:title="search here...."
+            android:icon="@drawable/ic_search_black_24dp"
+            app:showAsAction="ifRoom|collapseActionView"
+            app:actionViewClass="androidx.appcompat.widget.SearchView"
+
+            />
+</menu>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "87714475578",
+    "firebase_url": "https://recart-4ea73.firebaseio.com",
+    "project_id": "recart-4ea73",
+    "storage_bucket": "recart-4ea73.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:87714475578:android:9af70f3341b316a6458f03",
+        "android_client_info": {
+          "package_name": "com.recart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "87714475578-7qtbqu1j7mk4tfrbtlr7kdvv4rik2vgk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.recart",
+            "certificate_hash": "128096fdb82ce91ae527d265b1976339583f8aac"
+          }
+        },
+        {
+          "client_id": "87714475578-e12ccj399kl4c1k1i55dh1pkc0f4tgc3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCq-bu7RbkDbbDtZ3b-LlycjycCFHaT7d8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "87714475578-e12ccj399kl4c1k1i55dh1pkc0f4tgc3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

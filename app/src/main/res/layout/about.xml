@@ -1,0 +1,274 @@
+<LinearLayout
+
+        android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        >
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relLayout1">
+
+        <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/profileToolBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorPrimary"
+                    app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="20dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:id="@+id/back_about"
+                            android:background="@drawable/ic_arrow_back_black_24dp"
+                            />
+
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="13dp"
+                            android:text="ABOUT"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:textColor="#FFF"
+                            android:id="@+id/type_about"/>
+
+
+
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="About Us"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginTop="7dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:text="Are you tired of paying extra amount on auto and travel ?"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:text="Are you someone who wishes to eat more but don’t have time?"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:text="Wants your things at your doors?"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Don’t worry, as ReCart has always got your back as our Team always strives to fill your platter with all your needs in just a click."
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+
+                android:text="Whether you are student don’t have much time for yourself don’t worry ReCart will provide everything you need from pin to platter, from tip to top!! "
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Whether you have a job that keeps you on your toes all the time or you are tired of making assignments and ppts wants something for relax food can be mood changer, you can always rely on ReCart to make it a point that your Needs and Desires  are not compromised in the midst
+of all this busy schedule.
+"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:text="After all, you know what we say, “Foody you, Happy you!”"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="TnC Applied"
+                        android:id="@+id/tnc"
+                    android:gravity="right"
+                        android:textColor="#2196F3"
+
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Our Team"
+                android:textStyle="bold"
+                android:textSize="20dp"
+
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="1.Arvind Kumar Mishra"
+            android:layout_height="wrap_content"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:text="2.Manish Sharma"
+                    android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:text="3.Jeetu Singh"
+            android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:text="4.Raj Sharma"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:text="5.ALOK KUMAR SINGH"
+                    android:layout_height="wrap_content"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="5.2"
+        android:layout_marginBottom="10dp"
+
+
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/text"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Tap to connect with us:"
+
+
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+
+            android:layout_height="35dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+        <TextView
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:id="@+id/blog"
+            android:layout_marginLeft="7dp"
+            android:background="@drawable/internet"
+            />
+        <TextView
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:id="@+id/instagram"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/instagram"
+            />
+        <TextView
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:id="@+id/facebook"
+            android:layout_marginLeft="20dp"
+             android:background="@drawable/facebook"
+
+            />
+
+
+
+        <TextView
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:id="@+id/twitter"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/twitter"
+            />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:id="@+id/youtube"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/youtube"
+            />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+
+
+
+

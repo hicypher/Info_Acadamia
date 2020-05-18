@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/app_bar_home"
+        tools:context=".home">
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="vertical"
+                      android:layout_height="wrap_content">
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="180sp"
+                android:layout_weight="1"
+                android:id="@+id/offer"
+                android:layout_marginTop="40sp"
+                android:orientation="vertical"
+                android:layout_marginRight="50sp"
+                android:layout_marginLeft="50sp"
+                android:background="@drawable/roundoffer"
+                android:gravity="center_horizontal"
+                >
+
+            </LinearLayout>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Special Offers"
+                android:textColor="#070707"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                />
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="180sp"
+                          android:layout_weight="1"
+                          android:id="@+id/veg_section"
+                          android:layout_marginTop="40sp"
+                          android:orientation="vertical"
+                          android:layout_marginRight="50sp"
+                          android:layout_marginLeft="50sp"
+                          android:background="@drawable/veg_food"
+                          android:gravity="center_horizontal"
+            >
+
+            </LinearLayout>
+            <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vegetarian Section"
+                    android:textColor="#070707"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    />
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="180sp"
+                          android:layout_weight="1"
+                          android:id="@+id/non_veg_section"
+                    android:orientation="vertical"
+                          android:layout_marginTop="40sp"
+                          android:layout_marginRight="50sp"
+                          android:layout_marginLeft="50sp"
+                          android:background="@drawable/food_non_veg"
+                          android:gravity="center_horizontal"
+            >
+
+
+
+            </LinearLayout>
+
+            <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Non-Veg Section"
+                    android:layout_gravity="center"
+                    android:textColor="#0A0A0A"
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    />
+
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="180sp"
+                          android:layout_weight="1"
+                          android:id="@+id/milk_product"
+                    android:orientation="vertical"
+                          android:layout_marginTop="40sp"
+                          android:layout_marginRight="50sp"
+                          android:layout_marginLeft="50sp"
+                          android:background="@drawable/milk_product"
+                          android:gravity="center_horizontal"
+            >
+
+
+
+
+            </LinearLayout>
+            <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Milk Product"
+                    android:layout_gravity="center"
+                    android:textColor="#090808"
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    />
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="180sp"
+                          android:layout_weight="1"
+                          android:layout_marginTop="40sp"
+                    android:orientation="vertical"
+                          android:id="@+id/medicine"
+                          android:layout_marginRight="50sp"
+                          android:layout_marginLeft="50sp"
+                          android:background="@drawable/medicine"
+                          android:gravity="center_horizontal"
+            >
+
+
+
+
+
+            </LinearLayout>
+
+            <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Medicine"
+                    android:layout_gravity="center"
+                    android:textColor="#0A0A0A"
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    />
+
+            <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="180sp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="40sp"
+                    android:orientation="vertical"
+                    android:id="@+id/Fruits"
+                    android:layout_marginRight="50sp"
+                    android:layout_marginLeft="50sp"
+                    android:background="@drawable/fruts"
+                    android:gravity="center_horizontal"
+                    >
+
+
+
+
+
+            </LinearLayout>
+
+            <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fruits"
+                    android:layout_gravity="center"
+                    android:textColor="#0A0A0A"
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    />
+
+            <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="180sp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="40sp"
+                    android:orientation="vertical"
+                    android:id="@+id/fast_food"
+                    android:layout_marginRight="50sp"
+                    android:layout_marginLeft="50sp"
+                    android:background="@drawable/fast_food"
+                    android:gravity="center_horizontal"
+                    >
+
+
+
+
+
+            </LinearLayout>
+
+            <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fast Food"
+                    android:layout_gravity="center"
+                    android:textColor="#0A0A0A"
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    />
+            <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="180sp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="40sp"
+                    android:orientation="vertical"
+                    android:id="@+id/bakery"
+                    android:layout_marginRight="50sp"
+                    android:layout_marginLeft="50sp"
+                    android:background="@drawable/bakery"
+                    android:gravity="center_horizontal"
+                    >
+
+
+
+
+
+            </LinearLayout>
+
+            <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bakery"
+                    android:layout_gravity="center"
+                    android:textColor="#0A0A0A"
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    />
+
+            <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="180sp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="40sp"
+                    android:orientation="vertical"
+                    android:id="@+id/daily_product"
+                    android:layout_marginRight="50sp"
+                    android:layout_marginLeft="50sp"
+                    android:background="@drawable/daily_product"
+                    android:gravity="center_horizontal"
+                    >
+
+
+
+
+
+            </LinearLayout>
+
+            <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Daily Products"
+                    android:layout_gravity="center"
+                    android:textColor="#0A0A0A"
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    />
+            <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="250sp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="40sp"
+                    android:orientation="vertical"
+                    android:id="@+id/others"
+                    android:layout_marginRight="50sp"
+                    android:layout_marginLeft="50sp"
+                    android:background="@drawable/others"
+                    android:gravity="center_horizontal"
+                    >
+            </LinearLayout>
+            <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Others"
+                    android:layout_gravity="center"
+                    android:textColor="#0A0A0A"
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    />
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
